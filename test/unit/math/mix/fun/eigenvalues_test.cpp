@@ -2,9 +2,7 @@
 #include <stdexcept>
 
 TEST(mathMixFun, eigenvalues) {
-  auto f = [](const auto& x) {
-    return stan::math::eigenvalues(x);
-  };
+  auto f = [](const auto& x) { return stan::math::eigenvalues(x); };
   /*
   for (const auto& x : stan::test::square_test_matrices(0, 2)) {
     stan::test::expect_ad(f, x);
