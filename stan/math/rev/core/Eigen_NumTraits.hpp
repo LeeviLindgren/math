@@ -357,8 +357,8 @@ struct general_matrix_vector_product<Index, stan::math::var, LhsMapper,
 template <typename Index, typename LhsMapper, bool ConjugateLhs,
           bool ConjugateRhs, typename RhsMapper, int Version>
 struct general_matrix_vector_product<Index, stan::math::var, LhsMapper,
-                                     ColMajor, ConjugateLhs, double,
-                                     RhsMapper, ConjugateRhs, Version> {
+                                     ColMajor, ConjugateLhs, double, RhsMapper,
+                                     ConjugateRhs, Version> {
   using LhsScalar = stan::math::var;
   using RhsScalar = double;
   using ResScalar = stan::math::var;
@@ -429,12 +429,11 @@ struct general_matrix_vector_product<Index, stan::math::var, LhsMapper,
   }
 };
 
-
 template <typename Index, typename LhsMapper, bool ConjugateLhs,
           bool ConjugateRhs, typename RhsMapper, int Version>
 struct general_matrix_vector_product<Index, stan::math::var, LhsMapper,
-                                     RowMajor, ConjugateLhs, double,
-                                     RhsMapper, ConjugateRhs, Version> {
+                                     RowMajor, ConjugateLhs, double, RhsMapper,
+                                     ConjugateRhs, Version> {
   using LhsScalar = stan::math::var;
   using RhsScalar = double;
   using ResScalar = stan::math::var;

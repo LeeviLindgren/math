@@ -7,7 +7,7 @@ TEST(MathMixMatFun, mdivideRightTri) {
   auto f_up = [](const auto& x, const auto& y) {
     return stan::math::mdivide_right_tri<Eigen::Upper>(x, y);
   };
-  
+
   // size zero inputs
   Eigen::MatrixXd m00(0, 0);
   Eigen::RowVectorXd rv0(0);
@@ -81,6 +81,5 @@ TEST(MathMixMatFun, mdivideRightTri) {
 
   // exceptions: wrong types
   // NOTE: This should be throwing but it's not
-  //stan::test::expect_ad(f, v3, m33);
-
+  // stan::test::expect_ad(f, v3, m33);
 }
