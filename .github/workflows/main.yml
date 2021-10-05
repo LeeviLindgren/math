@@ -28,8 +28,8 @@ jobs:
       with:
         python-version: '2.x'
     - uses: r-lib/actions/setup-r@v1
-       with:
-         r-version: 'release'
+      with:
+        r-version: 'release'
     - name: Set path for RTools 4.0
       if: runner.os == 'Windows'
       run: echo "C:/rtools40/usr/bin;C:/rtools40/mingw64/bin" | Out-File -Append -FilePath $env:GITHUB_PATH -Encoding utf8
