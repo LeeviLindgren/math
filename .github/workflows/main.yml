@@ -33,9 +33,6 @@ jobs:
     - name: Set path for RTools 4.0
       if: runner.os == 'Windows'
       run: echo "C:/rtools40/usr/bin;C:/rtools40/mingw64/bin" | Out-File -Append -FilePath $env:GITHUB_PATH -Encoding utf8
-    - name: PATH Setup
-      shell: powershell
-      run: echo "C:/Rtools/bin;C:/Rtools/mingw_64/bin" | Out-File -Append -FilePath $env:GITHUB_PATH -Encoding utf8
     - name: Print g++ & make version and path
       shell: powershell
       run: |
@@ -79,9 +76,6 @@ jobs:
     - name: Set path for RTools 4.0
       if: runner.os == 'Windows'
       run: echo "C:/rtools40/usr/bin;C:/rtools40/mingw64/bin" | Out-File -Append -FilePath $env:GITHUB_PATH -Encoding utf8
-    - name: PATH Setup
-      shell: powershell
-      run: echo "C:/Rtools/bin;C:/Rtools/mingw_64/bin" | Out-File -Append -FilePath $env:GITHUB_PATH -Encoding utf8
     - name: Print g++ & make version and path
       shell: powershell
       run: |
@@ -126,9 +120,6 @@ jobs:
     - name: Set path for RTools 4.0
       if: runner.os == 'Windows'
       run: echo "C:/rtools40/usr/bin;C:/rtools40/mingw64/bin" | Out-File -Append -FilePath $env:GITHUB_PATH -Encoding utf8
-    - name: PATH Setup
-      shell: powershell
-      run: echo "C:/Rtools/bin;C:/Rtools/mingw_64/bin" | Out-File -Append -FilePath $env:GITHUB_PATH -Encoding utf8
     - name: Print g++ & make version and path
       shell: powershell
       run: |
